@@ -24,6 +24,7 @@ requirements:
     - numpy >=1.12
     - six >=1.10
     - wxpython >=4.0.3
+    - wxutils
 
 test:
   imports:
