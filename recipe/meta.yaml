@@ -22,6 +22,7 @@ requirements:
     - python >=3.6
     - matplotlib-base >=2.0
     - numpy >=1.12
+    - pyyaml
     - six >=1.10
     - wxpython >=4.0.3
     - wxutils
