@@ -1,5 +1,5 @@
 {% set name = "wxmplot" %}
-{% set version = "0.9.50" %}
+{% set version = "0.9.52" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 53c24f37ac0d138f382f8d04cc700aa10ed2508ea37b51755bf5c10da6533e1a
+  sha256: 43bef05e0191ab188f13938a2bfc842c7926dd54826f5dcfd6cc8c306a46d5b7
 
 build:
   noarch: python
@@ -22,6 +22,7 @@ requirements:
     - python >=3.6
     - matplotlib-base >=2.0
     - numpy >=1.12
+    - pyyaml
     - six >=1.10
     - wxpython >=4.0.3
     - wxutils
