@@ -1,11 +1,11 @@
-About wxmplot
-=============
+About wxmplot-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/wxmplot-feedstock/blob/main/LICENSE.txt)
 
 Home: http://newville.github.io/wxmplot
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/wxmplot-feedstock/blob/main/LICENSE.txt)
 
 Summary: wxPython plotting widgets using matplotlib
 
