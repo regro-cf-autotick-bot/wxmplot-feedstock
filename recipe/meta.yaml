@@ -6,20 +6,20 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 5f638aa9d005ece0916f60ff1a28532689c4a0f88f9245079fda5cdba54215bd
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - matplotlib-base >=2.0
     - numpy >=1.12
     - pyyaml
@@ -28,6 +28,8 @@ requirements:
     - wxutils
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - wxmplot
 
