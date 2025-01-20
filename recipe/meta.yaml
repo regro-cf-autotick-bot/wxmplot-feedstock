@@ -1,13 +1,13 @@
 {% set name = "wxmplot" %}
-{% set version = "0.9.59" %}
+{% set version = "2025.1.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 5f638aa9d005ece0916f60ff1a28532689c4a0f88f9245079fda5cdba54215bd
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 389d6a842361cd3acecc035099f251f37550d3b8f42896b9ae20b56921bf781e
 
 build:
   noarch: python
